@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@keyframes drop {
+  100% {
+    transform: translateY(600px);
+  }
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("img/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.spawnarea {
+  margin: auto;
+  position: fixed;
+  top: 10%;
+  left: 12%;
+  height: 27%;
+  width: 85%;
+  /* border: 2px dashed limegreen; */
+  z-index: 2;
+}
+
+.spawnarea .apple {
+  /* border: 2px solid blue; */
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  background-image: url("img/apple.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  z-index: 2;
+}
+.spawnarea .apple:hover {
+  cursor: pointer;
+}
+
+.newtonarea {
+  margin: auto;
+  position: fixed;
+  bottom: 1%;
+  left: 12%;
+  height: 27%;
+  width: 85%;
+  /* border: 2px dashed black; */
+}
+.newtonarea .newton {
+  /* border: 2px solid blue; */
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  height: 120px;
+  width: 90px;
+  background-image: url("img/newton.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+.score {
+  position: fixed;
+  top: 5%;
+  left: 35%;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  color: yellow;
+  z-index: 0;
+}
+
+.lifes {
+  position: fixed;
+  top: 5%;
+  left: 55%;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  color: yellow;
+  z-index: 0;
+}
+
+.over {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: lightskyblue;
+  z-index: 4;
+  opacity: 0;
+  display: none;
+}
+
+.over .title {
+  position: fixed;
+  top: 35%;
+  left: 32%;
+  font-family: "Press Start 2P", cursive;
+  font-size: 4rem;
+  color: yellow;
+  z-index: 0;
+}
+
+.over .playAgain {
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  border: 5px solid yellow;
+  height: 150px;
+  width: 300px;
+}
+
+.over .playAgain .restart {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  height: 80%;
+  width: 80%;
+  border: none;
+  font-size: 1.5rem;
+  background: yellow;
+  color: lightskyblue;
+  font-family: "Press Start 2P", cursive;
+}
+
+.over .playAgain .restart:hover {
+  background: white;
+  cursor: pointer;
+}
+
+body .start {
+  z-index: 4;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: lightskyblue;
+}
+
+.start .play {
+  position: fixed;
+  top: 55%;
+  left: 40%;
+  border: 5px solid white;
+  font-size: 1.5rem;
+  background: yellow;
+  color: lightskyblue;
+  font-family: "Press Start 2P", cursive;
+  height: 15%;
+  width: 20%;
+  transition: all 0.1 ease;
+}
+
+.start .play:hover {
+  cursor: pointer;
+}
+
+.start .title {
+  position: absolute;
+  top: 22%;
+  left: 24%;
+  font-family: "Press Start 2P", cursive;
+  font-size: 4rem;
+  color: yellow;
+}
