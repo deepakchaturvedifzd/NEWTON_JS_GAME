@@ -4,7 +4,7 @@
 
 ---
 
-> Link : <a href='https://deepakchaturvedifzd.github.io/NEWTON_JS_GAME/'>PRESS TO PLAY !! </a>
+> Link : <a href='https://thedeepakchaturvedi.github.io/NEWTON_JS_GAME/'>PRESS TO PLAY !! </a>
 
 ### TECH STACKS
 
